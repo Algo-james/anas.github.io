@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Intake Calculator</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h4><span class="highlight">NO</span> WATER <span class="highlight">NO</span> LIFE</h4>
+      <h1>Calculate Your Daily Water Needs</h1>
+    <section>
+      <form id="water-form">
+        <section>
+        <fieldset style="border: 22px solid #ccc; padding: 10px; margin-bottom: 45px;">
+          <div>
+          <b><legend>Personal Information</legend></b>
+        </div>
+      
+        <div>
+        <b><label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" required /></b>
+        </div>
+
+        <div>
+        <b><label for="height">Height (cm):</label>
+          <input type="number" id="height" required /></b>
+        </div>
+        <div>
+        <b><label for="age">Age (years):</label>
+          <input type="number" id="age" required /></b>
+        </div>
+        </fieldset>
+      
+        <button type="submit" class="calculate-button">Calculate Water Intake</button>
+        <div class="text-center mt-4">
+          <button class="backtomain-button" onclick="backtomain()">Back to Main</a>
+        </div>
+        
+      </section>
+      </form>
+    </section>
+      <div id="result" class="result"></div>
+    </div>
+    
+    <div class="right-section">
+      <img src="https://www.pngitem.com/pimgs/m/604-6042239_glass-of-water-png-transparent-png.png" alt="Glass of water">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
